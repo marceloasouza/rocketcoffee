@@ -2,9 +2,7 @@ import styled from 'styled-components';
 
 export const Cabecalho = styled.div`
   max-width: 100%;
-  height: 100vh;
-  background-color: var(--backgrond);
-  padding-top: 50px;
+  padding: 50px 0px;
 `;
 
 export const Container = styled.div`
