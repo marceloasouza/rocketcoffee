@@ -4,9 +4,10 @@ import NavbarComponent from '../Navbar/Navbar';
 import { 
   Cabecalho, 
   Container, 
-  Logo,
+  Logo, TextLogo,
   } from '../Header/Header.styled';
 import Button from '../Button/Button';
+import MenuMobile from '../MenuMobile/MenuMobile';
 
 const Header = () => {
   return (
@@ -14,11 +15,13 @@ const Header = () => {
       <Container>
         <Logo>
             <img src={logodesk} alt="Logo" />
+            <TextLogo>rocketseat</TextLogo>
         </Logo>
         <NavbarComponent />
           <div>
             <Button />
           </div>
+          <MenuMobile />
       </Container>
     </Cabecalho>
   )

@@ -16,7 +16,29 @@ export const Container = styled.div`
 export const Logo = styled.div`
   width: 45px;
   height: 50px;
+
+  @media (max-width: 880px) {
+    padding-left: 10px;
+    display: flex;
+  }
 `;
+
+export const TextLogo = styled.h2`
+  display: none;
+  font-family: 'Manrope', sans-serif;
+  align-self: center;
+  font-size: 18px;
+  padding-left: 10px;
+  color: var(--text-color);
+
+  @media (max-width: 880px) {
+    display: block;
+  }
+`;
+
+
+
+
 
 
 

@@ -2,6 +2,10 @@ import styled from 'styled-components';
 
 export const NavList = styled.ul`
   display: flex;
+
+  @media(max-width: 880px) {
+    display: none;
+  }
 `;
 
 export const NavItem = styled.li`

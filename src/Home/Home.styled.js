@@ -38,5 +38,9 @@ export const PurpleText = styled.h1`
 
 export const Img = styled.div`
   max-width: 100%;
+  height: auto;
+  img {
+    padding-top: 20px;
+  }
 `;
 
