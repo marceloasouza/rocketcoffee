@@ -9,8 +9,4 @@ export const Btn = styled.button`
   border: 1px solid var(--button);
   border-radius: 6px;
   color: var(--text-color);
-
-  @media (max-width: 880px) {
-    display: none;
-  }
 `;

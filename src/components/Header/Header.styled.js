@@ -2,7 +2,8 @@ import styled from 'styled-components';
 
 export const Cabecalho = styled.div`
   max-width: 100%;
-  padding: 50px 0px;
+  padding: 20px 0px;
+  margin: 0px 10px;
 `;
 
 export const Container = styled.div`
@@ -20,21 +21,27 @@ export const Logo = styled.div`
   @media (max-width: 880px) {
     padding-left: 10px;
     display: flex;
+    visibility: hidden;
   }
 `;
 
-export const TextLogo = styled.h2`
-  display: none;
-  font-family: 'Manrope', sans-serif;
-  align-self: center;
-  font-size: 18px;
-  padding-left: 10px;
-  color: var(--text-color);
-
-  @media (max-width: 880px) {
-    display: block;
+export const Menu = styled.div`
+  display: flex;
+  justify-content: space-between;
+  visibility: visible;
+  text-align: end;
+  @media(min-width: 880px) {
+    visibility: hidden;
   }
 `;
+
+export const BtnDesk = styled.div`
+  
+  @media(max-width: 880px) {
+    display: none;
+  }
+`;
+
 
 
 

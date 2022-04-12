@@ -1,29 +1,37 @@
 import React from 'react';
 import logodesk from '../../assets/logo-desktop.svg';
+import logomobile from '../../assets/logo-mobile.svg';
 import NavbarComponent from '../Navbar/Navbar';
 import { 
-  Cabecalho, 
-  Container, 
-  Logo, TextLogo,
+    Container,
+    Cabecalho,
+    Logo,
+    Menu, 
+    BtnDesk
   } from '../Header/Header.styled';
 import Button from '../Button/Button';
 import MenuMobile from '../MenuMobile/MenuMobile';
 
+
 const Header = () => {
   return (
-    <Cabecalho>
-      <Container>
-        <Logo>
-            <img src={logodesk} alt="Logo" />
-            <TextLogo>rocketseat</TextLogo>
-        </Logo>
-        <NavbarComponent />
-          <div>
-            <Button />
-          </div>
+    <>
+      <Cabecalho>
+        <Menu>
+          <img src={logomobile} alt="LogoMobile" />
           <MenuMobile />
-      </Container>
-    </Cabecalho>
+        </Menu>
+        <Container>
+          <Logo>
+            <img src={logodesk} alt="Logo" />
+          </Logo>
+          <NavbarComponent />
+          <BtnDesk>
+            <Button />
+          </BtnDesk>
+        </Container>
+      </Cabecalho>
+    </>
   )
 }
 

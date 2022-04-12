@@ -1,27 +1,16 @@
 import React from 'react'
-
-import { NavList, NavLink, NavItem } from './Navbar.styled';
+import { Nav } from './Navbar.styled';
 
 const NavbarComponent = () => {
   return (
     <>
-        <NavList>
-          <NavLink>
-            <NavItem to="/">Home</NavItem>
-          </NavLink>
-          <NavLink>
-            <NavItem to="/menu">Menu</NavItem>
-          </NavLink>
-          <NavLink>
-            <NavItem to="/recompensas">Recompensas</NavItem>
-          </NavLink>
-          <NavLink>
-            <NavItem to="/giftcard">Gift Card</NavItem>
-          </NavLink>
-          <NavLink>
-            <NavItem to="/loja">Loja</NavItem>
-          </NavLink>
-        </NavList>
+        <Nav>
+          <li><a href="/home">Home</a></li>
+          <li><a href="/menu">Menu</a></li>
+          <li><a href="/recompensas">Recompensas</a></li>
+          <li><a href="/giftcard">GiftCard</a></li>
+          <li><a href="/loja">Loja</a></li>
+        </Nav>
     </>
   )
 }
